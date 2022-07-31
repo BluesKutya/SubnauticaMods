@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32413.511
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuildInSeatruck", "BuildInSeatruck\BuildInSeatruck.csproj", "{79259DFD-E1FD-4364-8C93-C0CD543863CB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{B2DFF26C-F82A-4840-99E2-5EAFFC369E24}"
+	ProjectSection(SolutionItems) = preProject
+		SolutionDirs.targets = SolutionDirs.targets
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		BZ.EXP|Any CPU = BZ.EXP|Any CPU
+		BZ|Any CPU = BZ|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{79259DFD-E1FD-4364-8C93-C0CD543863CB}.BZ.EXP|Any CPU.ActiveCfg = BZ.EXP|Any CPU
+		{79259DFD-E1FD-4364-8C93-C0CD543863CB}.BZ.EXP|Any CPU.Build.0 = BZ.EXP|Any CPU
+		{79259DFD-E1FD-4364-8C93-C0CD543863CB}.BZ|Any CPU.ActiveCfg = Release|Any CPU
+		{79259DFD-E1FD-4364-8C93-C0CD543863CB}.BZ|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {20902A08-2B7D-4654-B737-ACF616526C07}
+	EndGlobalSection
+EndGlobal

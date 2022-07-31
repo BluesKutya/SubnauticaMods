@@ -1,0 +1,17 @@
+﻿{
+  "Id": "BuildInSeatruck",
+  "DisplayName": "Build In Seatruck",
+  "Author": "BluesKutya",
+  "Version": "1.0.0",
+  "Enable": true,
+  "AssemblyName": "BuildInSeatruck.dll",
+  "VersionDependencies": {
+  },
+  "Game": "BelowZero",
+  "VersionChecker": {
+      "LatestVersionURL": "https://github.com/BluesKutya/SubnauticaMods/raw/main/BuildInSeatruck/mod.json"
+  },
+  "NexusId": {
+    "BelowZero": "287"
+  }
+}
