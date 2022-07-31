@@ -169,9 +169,9 @@ namespace BuildInSeatruck
 		internal class PowerConsumer_IsPowered_Patch
 		{
 			[HarmonyPrefix]
-			public static bool Prefix(ref bool __result)
+			public static bool Prefix(PowerConsumer __instance, ref bool __result)
 			{
-				SeaTruckSegment sts = SeaTruckSegmentHelper.getCurrentSeaTruckSegment();
+				SeaTruckSegment sts = SeaTruckSegmentHelper.getParentSeaTruckSegment(__instance.gameObject);
 				if (sts == null)
 					return true; //run the orignal code
 

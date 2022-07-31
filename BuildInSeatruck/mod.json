@@ -2,7 +2,7 @@
   "Id": "BuildInSeatruck",
   "DisplayName": "Build In Seatruck",
   "Author": "BluesKutya",
-  "Version": "1.0.0",
+  "Version": "1.0.1",
   "Enable": true,
   "AssemblyName": "BuildInSeatruck.dll",
   "VersionDependencies": {

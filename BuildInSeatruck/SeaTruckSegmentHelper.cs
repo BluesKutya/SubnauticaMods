@@ -15,6 +15,11 @@ namespace BuildInSeatruck
             return Player.main.currentInterior as SeaTruckSegment;
         }
 
+        public static SeaTruckSegment getParentSeaTruckSegment(GameObject gameObject)
+        {
+            return gameObject.GetComponentInParent<SeaTruckSegment>();
+        }
+
         public static SubRoot getCurrentSeaTruckSegmentSubRoot()
         {
             SeaTruckSegment sts = getCurrentSeaTruckSegment();
