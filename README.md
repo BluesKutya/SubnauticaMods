@@ -5,7 +5,7 @@
 - Build In Seatruck [link](https://www.nexusmods.com/subnauticabelowzero/mods/287 "link")
 
 ### Requirements
-- QModManager [nexus](https://www.nexusmods.com/subnauticabelowzero/mods/1 "QModManager "nexus") [github](https://github.com/QModManager/QModManager "github")
+- QModManager [nexus](https://www.nexusmods.com/subnauticabelowzero/mods/1 "nexus") [github](https://github.com/QModManager/QModManager "github")
 - BepInEx [link](https://github.com/BepInEx/BepInEx/releases "link")
 
 ### Build
