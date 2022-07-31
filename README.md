@@ -30,4 +30,4 @@ But of course you can copy out-folder [dll + mod.json] into you QMods.
 ### Links
 Harmony [link](https://harmony.pardeike.net/ "link")
 
-###End
+### End
