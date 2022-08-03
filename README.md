@@ -2,7 +2,10 @@
 
 ### List of mods (projects in VS solution)
 
+#### Below Zero:
 - Build In Seatruck [link](https://www.nexusmods.com/subnauticabelowzero/mods/287 "link")
+- Medical Cabinet Fix [link](https://www.nexusmods.com/subnauticabelowzero/mods/288 "link")
+
 
 ### Requirements
 - QModManager [nexus](https://www.nexusmods.com/subnauticabelowzero/mods/1 "nexus") [github](https://github.com/QModManager/QModManager "github")
