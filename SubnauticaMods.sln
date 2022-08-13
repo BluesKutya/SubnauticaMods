@@ -12,6 +12,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MedicalCabinetFix", "MedicalCabinetFix\MedicalCabinetFix.csproj", "{2DA6AB2F-F8E1-410E-A4D8-FFE6D8EE61AF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeaTruckNuclearRod", "SeaTruckNuclearRod\SeaTruckNuclearRod.csproj", "{D1F63A6B-2FFD-4E15-9396-89A96170DED5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		BZ.EXP|Any CPU = BZ.EXP|Any CPU
@@ -26,6 +28,10 @@ Global
 		{2DA6AB2F-F8E1-410E-A4D8-FFE6D8EE61AF}.BZ.EXP|Any CPU.Build.0 = BZ.EXP|Any CPU
 		{2DA6AB2F-F8E1-410E-A4D8-FFE6D8EE61AF}.BZ|Any CPU.ActiveCfg = BZ|Any CPU
 		{2DA6AB2F-F8E1-410E-A4D8-FFE6D8EE61AF}.BZ|Any CPU.Build.0 = BZ|Any CPU
+		{D1F63A6B-2FFD-4E15-9396-89A96170DED5}.BZ.EXP|Any CPU.ActiveCfg = BZ.EXP|Any CPU
+		{D1F63A6B-2FFD-4E15-9396-89A96170DED5}.BZ.EXP|Any CPU.Build.0 = BZ.EXP|Any CPU
+		{D1F63A6B-2FFD-4E15-9396-89A96170DED5}.BZ|Any CPU.ActiveCfg = BZ|Any CPU
+		{D1F63A6B-2FFD-4E15-9396-89A96170DED5}.BZ|Any CPU.Build.0 = BZ|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

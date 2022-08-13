@@ -1,0 +1,17 @@
+﻿{
+  "Id": "SeaTruckNuclearRod",
+  "DisplayName": "Seatruck Nuclear Rod",
+  "Author": "BluesKutya",
+  "Version": "1.0.0",
+  "Enable": true,
+  "AssemblyName": "SeaTruckNuclearRod.dll",
+  "Dependencies": [ "SMLHelper" ],
+  "LoadAfter": [ "UpgradedVehicles", "SlotExtenderZero" ],
+  "Game": "BelowZero",
+  "VersionChecker": {
+    "LatestVersionURL": "https://github.com/BluesKutya/SubnauticaMods/raw/main/SeaTruckNuclearRod/mod.json"
+  },
+  "NexusId": {
+    "BelowZero": "291"
+  }
+}
