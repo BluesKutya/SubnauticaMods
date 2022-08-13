@@ -5,6 +5,7 @@
 #### Below Zero:
 - Build In Seatruck [link](https://www.nexusmods.com/subnauticabelowzero/mods/287 "link")
 - Medical Cabinet Fix [link](https://www.nexusmods.com/subnauticabelowzero/mods/288 "link")
+- Seatruck Nuclear Rod [link](https://www.nexusmods.com/subnauticabelowzero/mods/291 "link")
 
 
 ### Requirements
