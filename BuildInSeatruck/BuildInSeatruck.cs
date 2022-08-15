@@ -181,6 +181,18 @@ namespace BuildInSeatruck
 
 		}
 
-	}
 
+		[HarmonyPatch(typeof(SeaTruckSegment))]
+		[HarmonyPatch(nameof(SeaTruckSegment.CanEnter))]
+		internal class SeaTruckSegment_CanEnter_Patch
+		{
+			[HarmonyPrefix]
+			public static bool Prefix(ref bool __result)
+			{
+				__result = true;
+				return false; //Tell Harmony to not run the original method
+			}
+		}
+
+	}
 }

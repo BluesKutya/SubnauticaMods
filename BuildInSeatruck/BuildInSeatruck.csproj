@@ -30,7 +30,8 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'BZ.EXP|AnyCPU'">
     <OutputPath>bin\$(Configuration)\</OutputPath>
     <GameDir>$(GameDir_BZEXP)</GameDir>
-    <DefineConstants>TRACE</DefineConstants>
+    <DefineConstants>
+    </DefineConstants>
     <Optimize>true</Optimize>
     <DebugType>pdbonly</DebugType>
     <PlatformTarget>AnyCPU</PlatformTarget>
