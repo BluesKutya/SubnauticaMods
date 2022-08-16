@@ -35,11 +35,16 @@ namespace SeaTruckNuclearRod
             foundBehaviour = __instance.gameObject.TryGetComponent(out nuclearControl);
 
             // If equipped, proceed
-            if (added && !foundBehaviour)
-            {
-                nuclearControl = __instance.gameObject.AddComponent<SeaTruckNuclearControl>();
+            if (added) {
+                if (!foundBehaviour) {
+                    nuclearControl = __instance.gameObject.AddComponent<SeaTruckNuclearControl>();
+                } else {
+                    nuclearControl = __instance.gameObject.GetComponent<SeaTruckNuclearControl>();
+                }
+
                 nuclearControl.seatruckUpgr = __instance;
                 nuclearControl.slotID = slotID;
+                nuclearControl.setBattery(((Pickupable)(((IQuickSlots)__instance).GetSlotItem(slotID).item)).gameObject.GetComponent<Battery>());
             }
 
             if (!added && noneEquipped && foundBehaviour)

@@ -2,7 +2,7 @@
   "Id": "SeaTruckNuclearRod",
   "DisplayName": "Seatruck Nuclear Rod",
   "Author": "BluesKutya",
-  "Version": "1.0.0",
+  "Version": "1.0.1",
   "Enable": true,
   "AssemblyName": "SeaTruckNuclearRod.dll",
   "Dependencies": [ "SMLHelper" ],
