@@ -18,7 +18,7 @@
 - You have to set folders of your games (without ending '\\' sign) in solution directory, file: SolutionDirs.targets
 - If you have own publicized Assembly files you can copy into folder: 
 *[SolutionDir]\Dependencies\\[Configuration]\*
-- You can select your game type (SN, BZ, EXPs over the configurations.)
+- You can select your game type (SN, BZ, EXPs over the configurations, BZ.WTD compatible with "What the Dock Update")
 
 #### Output
 The output folder is:

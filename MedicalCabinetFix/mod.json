@@ -2,7 +2,7 @@
   "Id": "MedicalCabinetFix",
   "DisplayName": "Medical Cabinet Fix",
   "Author": "BluesKutya",
-  "Version": "1.0.0",
+  "Version": "1.0.1",
   "Enable": true,
   "AssemblyName": "MedicalCabinetFix.dll",
   "VersionDependencies": {

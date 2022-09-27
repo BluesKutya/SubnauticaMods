@@ -5,6 +5,7 @@
 		<GameDir_SNEXP></GameDir_SNEXP>
 		<GameDir_BZ>f:\Shared\SubnauticaBelowZero</GameDir_BZ>
 		<GameDir_BZEXP>f:\Shared\SubnauticaBelowZero</GameDir_BZEXP>
+		<GameDir_BZWTD>f:\Shared\_SubnauticaBelowZero</GameDir_BZWTD>
 		<Dependencies>$(SolutionDir)\Dependencies</Dependencies>
 	</PropertyGroup>
 </Project>
