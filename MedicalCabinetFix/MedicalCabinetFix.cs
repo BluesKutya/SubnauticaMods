@@ -1,6 +1,7 @@
 ﻿using System;
 using FMODUnity;
 using HarmonyLib;
+using SMLHelper.V2.Handlers;
 using UnityEngine;
 
 namespace MedicalCabinetFix
@@ -25,6 +26,7 @@ namespace MedicalCabinetFix
 			{
 				addToKnownTech(TechType.MedicalCabinetBlueprint);
 				addToKnownTech(TechType.MedicalCabinet);
+				CraftDataHandler.AddToGroup(TechGroup.InteriorModules, TechCategory.InteriorModule, TechType.MedicalCabinet);
 			}
 		}
 

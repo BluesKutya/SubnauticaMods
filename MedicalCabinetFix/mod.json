@@ -2,9 +2,10 @@
   "Id": "MedicalCabinetFix",
   "DisplayName": "Medical Cabinet Fix",
   "Author": "BluesKutya",
-  "Version": "1.0.1",
+  "Version": "1.0.2",
   "Enable": true,
   "AssemblyName": "MedicalCabinetFix.dll",
+  "Dependencies": [ "SMLHelper" ],
   "VersionDependencies": {
   },
   "Game": "BelowZero",
