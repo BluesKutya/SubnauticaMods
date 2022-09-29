@@ -1,7 +1,7 @@
-﻿using System;
-using FMODUnity;
+﻿using FMODUnity;
 using HarmonyLib;
 using UnityEngine;
+
 
 namespace BuildInSeatruck
 {
@@ -23,6 +23,7 @@ namespace BuildInSeatruck
 
 			}
 		}
+
 
 		[HarmonyPatch(typeof(Builder))]
 		[HarmonyPatch(nameof(Builder.TryPlace))]
@@ -96,13 +97,14 @@ namespace BuildInSeatruck
 			}
 		}
 
+
 		[HarmonyPatch(typeof(Builder))]
 		[HarmonyPatch(nameof(Builder.ValidateOutdoor))]
 		internal class Builder_ValidateOutdoor_Patch
 		{
 			[HarmonyPrefix]
 			public static bool Prefix(GameObject hitObject, ref bool __result)
-			{
+			{	
 				Rigidbody component = hitObject.GetComponent<Rigidbody>();
 				if (component && !component.isKinematic)
 				{
@@ -124,6 +126,68 @@ namespace BuildInSeatruck
 				LiveMixin component3 = hitObject.GetComponent<LiveMixin>();
 				__result = !(component3 != null) || !component3.destroyOnDeath;
 				return false; //Tell Harmony to not run the original method
+			}
+		}
+
+
+		[HarmonyPatch(typeof(Builder))]
+		[HarmonyPatch(nameof(Builder.CheckAsSubModule))]
+		internal class Builder_CheckAsSubModule_Patch
+		{
+			[HarmonyPrefix]
+			public static bool Prefix(ref Collider hitCollider, ref bool __result)
+			{
+				hitCollider = null;
+				Builder.placementTarget = null;
+				Transform aimTransform = Builder.GetAimTransform();
+				RaycastHit hit;
+				if (!Physics.Raycast(aimTransform.position, aimTransform.forward, out hit, Builder.placeMaxDistance, Builder.placeLayerMask.value, QueryTriggerInteraction.Ignore)) {
+					__result = false;
+					return false;
+				}
+
+				if (!Constructable.CheckFlags(Builder.allowedInBase, Builder.allowedInSub, Builder.allowedOutside, Builder.allowedUnderwater, hit.point)) {
+					__result = false;
+					return false;
+				}
+
+				hitCollider = hit.collider;
+				Builder.placementTarget = hitCollider.gameObject;
+				Builder.SetPlaceOnSurface(hit, ref Builder.placePosition, ref Builder.placeRotation);
+				if (!Builder.CheckTag(hitCollider)) {
+					__result = false;
+					return false;
+				}
+
+				if (!Builder.CheckSurfaceType(Builder.GetSurfaceType(hit.normal))) {
+					__result = false;
+					return false;
+				}
+
+				if (!Builder.CheckDistance(hit.point, Builder.placeMinDistance)) {
+					__result = false;
+					return false;
+				}
+
+				if (!Builder.allowedOnConstructables && Builder.HasComponent<Constructable>(hitCollider.gameObject)) {
+					__result = false;
+					return false;
+				}
+
+				if (!Player.main.IsInSub()) {
+					GameObject entityRoot = UWE.Utils.GetEntityRoot(Builder.placementTarget);
+					if (!entityRoot) {
+						entityRoot = Builder.placementTarget;
+					}
+
+					if (!Builder.ValidateOutdoor(entityRoot)) {
+						__result = false;
+						return false;
+					}
+				}
+
+				__result = true;
+				return false;
 			}
 		}
 
@@ -159,8 +223,6 @@ namespace BuildInSeatruck
 				__result = true;
 				return false; //Tell Harmony to not run the original method
 			}
-
-
 		}
 
 
